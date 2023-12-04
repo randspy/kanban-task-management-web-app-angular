@@ -17,6 +17,50 @@ module.exports = {
       "kg-lines-light": "#E4EBFA",
       "kg-white": "#FFFFFF",
     },
+    fontSize: {
+      "kg-h-xl": [
+        "1.5rem",
+        {
+          lineHeight: "1.875rem",
+          fontWeight: "700",
+        },
+      ],
+      "kg-h-l": [
+        "1.125rem",
+        {
+          lineHeight: "1.438rem",
+          fontWeight: "700",
+        },
+      ],
+      "kg-h-m": [
+        "0.938rem",
+        {
+          lineHeight: "1.188rem",
+          fontWeight: "700",
+        },
+      ],
+      "kg-h-s": [
+        "0.75rem",
+        {
+          lineHeight: "0.938rem",
+          fontWeight: "700",
+        },
+      ],
+      "kg-b-l": [
+        "0.813rem",
+        {
+          lineHeight: "1.438rem",
+          fontWeight: "400",
+        },
+      ],
+      "kg-b-m": [
+        "0.75rem",
+        {
+          lineHeight: "0.938rem",
+          fontWeight: "700",
+        },
+      ],
+    },
   },
   plugins: [],
 };
