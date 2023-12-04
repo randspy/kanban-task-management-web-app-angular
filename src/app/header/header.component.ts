@@ -8,4 +8,8 @@ import { ButtonComponent } from './../shared/button/button.component';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  addNewTask() {
+    console.log('addNewTask');
+  }
+}
