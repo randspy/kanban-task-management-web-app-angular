@@ -9,10 +9,17 @@
   </p>
   @for (board of boards$ | async; track $index) {
   <button
-    class="flex items-center pl-6 mt-4 bg-kg-purple text-kg-white py-4 pr-4 rounded-r-full w-56"
+    class="flex items-center pl-6 mt-4 bg-kg-purple text-kg-grey-medium py-4 pr-4 rounded-r-full w-56"
+    [ngClass]="{
+      'bg-kg-purple text-kg-white': board === (selectedBoard$ | async)
+    }"
+    (click)="selectBoard(board)"
   >
     <img
       class="icon-white-color inline mr-2"
+      [ngClass]="{
+        'icon-white-color': board === (selectedBoard$ | async)
+      }"
       src="./assets/icon-board.svg"
       alt="Board Icon"
     />
