@@ -9,8 +9,11 @@
   }
 </style>
 
-<main class="flex flex-col">
-  <app-header></app-header>
+<main class="grid md:grid-cols-[16rem,auto] bg-kg-grey-very-dark">
+  <app-side-panel class="hidden md:block" />
+  <div class="flex flex-col">
+    <app-header />
+  </div>
 </main>
 
 <router-outlet></router-outlet>
