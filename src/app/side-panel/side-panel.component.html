@@ -4,8 +4,10 @@
     <img class="hidden md:inline" src="./assets/logo-light.svg" alt="Logo" />
   </span>
 
-  <p class="text-kg-grey-medium text-kg-h-s ml-6">ALL BOARDS (3)</p>
-  @for (board of boards; track $index) {
+  <p class="text-kg-grey-medium text-kg-h-s ml-6">
+    ALL BOARDS ({{ (boards$ | async)?.length }})
+  </p>
+  @for (board of boards$ | async; track $index) {
   <button
     class="flex items-center pl-6 mt-4 bg-kg-purple text-kg-white py-4 pr-4 rounded-r-full w-56"
   >
