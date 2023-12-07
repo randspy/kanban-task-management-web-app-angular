@@ -1,5 +1,7 @@
-<div class="flex">
+<div class="flex h-screen">
   @for (column of columns$ | async; track $index) {
   <app-column [column]="column" />
+  } @empty {
+  <app-empty-board class="flex flex-col justify-center mx-auto" />
   }
 </div>

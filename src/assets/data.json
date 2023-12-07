@@ -1,6 +1,10 @@
 {
   "boards": [
     {
+      "name": "Empty Board",
+      "columns": []
+    },
+    {
       "name": "Platform Launch",
       "columns": [
         {
