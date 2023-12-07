@@ -4,11 +4,14 @@
   </span>
 
   <span class="my-auto">
-    <span class="text-kg-white text-kg-h-l mr-2">Platform Launch</span>
-    <img
-      class="inline md:hidden"
-      src="./assets/icon-chevron-down.svg"
-      alt="Arrow down"
+    <span class="hidden md:block text-kg-white text-kg-h-l mr-2">{{
+      selectedBoard$ | async
+    }}</span>
+    <app-drop-down
+      class="md:hidden"
+      [items]="(boards$ | async) || []"
+      [selected]="(selectedBoard$ | async) || 'Select Board'"
+      (selectItem)="selectBoard($event)"
     />
   </span>
   <app-button class="ml-auto text-kg-h-m" (clicked)="addNewTask()">

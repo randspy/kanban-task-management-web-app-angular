@@ -1,0 +1,11 @@
+<div class="dropdown">
+  <select
+    class="bg-kg-grey-dark text-kg-h-l text-kg-white"
+    [value]="selected"
+    (change)="onChange($event)"
+  >
+    @for (item of items; track $index) {
+    <option>{{ item }}</option>
+    }
+  </select>
+</div>
