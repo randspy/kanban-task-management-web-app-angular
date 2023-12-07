@@ -1,0 +1,7 @@
+<div class="bg-kg-grey-dark rounded-md px-4 py-6">
+  <div class="text-kg-h-m text-kg-white mb-2">{{ task.title }}</div>
+  <div class="text-kg-grey-medium text-kg-h-s">
+    {{ task.subtasks | completedSubtasksCount }} of
+    {{ task.subtasks.length }} substasks
+  </div>
+</div>

@@ -44,3 +44,8 @@ export const selectorSelectedBoardName = createSelector(
   selectorSelectedBoard,
   (board) => board?.name
 );
+
+export const selectorSelectedBoardColumns = createSelector(
+  selectorSelectedBoard,
+  (board) => board?.columns
+);

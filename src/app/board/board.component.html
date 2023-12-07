@@ -1,0 +1,5 @@
+<div class="flex">
+  @for (column of columns$ | async; track $index) {
+  <app-column [column]="column" />
+  }
+</div>
