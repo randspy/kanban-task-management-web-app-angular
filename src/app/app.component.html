@@ -9,11 +9,14 @@
   }
 </style>
 
-<main class="grid md:grid-cols-[16rem,auto] bg-kg-grey-very-dark">
-  <app-side-panel class="hidden md:block" />
-  <div class="flex flex-col">
-    <app-header />
-    <app-board />
+<main class="bg-kg-grey-very-dark h-screen flex overflow-hidden">
+  <app-side-panel
+    class="hidden md:block w-64 h-full md:overflow-y-auto md:fixed"
+  />
+
+  <div class="flex flex-col w-full md:ml-64">
+    <app-header class="w-full md:header-width h-16 fixed" />
+    <app-board class="h-full mt-16 overflow-y-auto" />
   </div>
 </main>
 
