@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Store } from '@ngrx/store';
 import { ColumnComponent } from './column/column.component';
-import { EmptyBoardComponent } from './empty-board/empty-board.component';
+import { EmptyBoardComponent } from './empty-board.component';
 import { Component } from '@angular/core';
 import * as fromBoards from '../store/boards/boards.reducer';
 

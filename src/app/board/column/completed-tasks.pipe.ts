@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Subtask } from './../../../store/boards/boards';
+import { Subtask } from './../../store/boards/boards';
 
 @Pipe({
   name: 'completedSubtasksCount',

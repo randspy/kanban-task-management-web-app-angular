@@ -4,8 +4,19 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   selector: 'app-drop-down',
   standalone: true,
   imports: [],
-  templateUrl: './drop-down.component.html',
-  styleUrl: './drop-down.component.scss',
+  template: `
+    <div class="dropdown">
+      <select
+        class="bg-kg-grey-dark text-kg-h-l text-kg-white"
+        [value]="selected"
+        (change)="onChange($event)"
+      >
+        @for (item of items; track $index) {
+        <option>{{ item }}</option>
+        }
+      </select>
+    </div>
+  `,
 })
 export class DropDownComponent {
   @Input() public items: string[] = [];
