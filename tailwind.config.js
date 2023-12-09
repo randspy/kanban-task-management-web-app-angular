@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        "header-width": "calc(100% - 16rem)",
+      },
+    },
     colors: {
       "kg-purple": "#635FC7",
       "kg-purple-hover": "#A8A4FF",
